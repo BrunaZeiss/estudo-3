@@ -1,0 +1,63 @@
+/*  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+    border-radius: 10px;
+    width: auto;
+    height: 850px;
+    position: relative;
+    z-index: 143;
+    margin: 22px;
+}
+
+.container nav {
+    background-image: url("imagens/header-radius-left.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content:first baseline;
+    width: 100%;
+    padding: 0 16px;
+}
+
+nav a#inicial {
+  font-size: 13px;
+  font-family: "PierSans";
+  color: rgb(214, 214, 214);
+  text-transform: uppercase;
+  line-height: 6.769;
+  text-align: left;
+  position: absolute;
+  left: 235.808px;
+  top: 30.502px;
+  z-index: 191;
+}
+
+
+
+/* GRID MOBILE */
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* IMAGENS RESPONSIVAS */
+img {
+  max-width: 100%;
+  display: block;
+}
