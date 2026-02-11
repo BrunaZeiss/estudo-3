@@ -24,7 +24,6 @@ body {
 }
 
 header {
-  width: 100wh;
   min-height: clamp(360px, 90vh, 950px);
   margin: 20px;
 
@@ -40,32 +39,23 @@ header {
 }
 
 #rt3 {
-  position: absolute;
-    left: 7%;
-    top: 66%;
-    width: 2%;
-    height: 4%;
-    z-index: 156
+  margin: 85px 0px 0px 19px;
+  width: 2%;
+  height: 4%;
 }
 
 
 #rt2 {
-      position: absolute;
-    left: 4%;
-    top: 66%;
-    width: 2.1%;
-    height: 4%;
-    z-index: 160;
+  margin: 0px 0px 0px 19px;
+  width: 2%;
+  height: 4%;
 }
 
 
 #rt1 {
-    position: absolute;
-    left: 1%;
-    top: 66%;
-    width: 2%;
-    height: 4%;
-    z-index: 156
+   margin: 0px 0px 0px 19px;
+  width: 2%;
+  height: 4%;
 }
 
 
@@ -108,70 +98,13 @@ header #marca {
     line-height: 1.1;
 }
 
-@media (max-width: 740px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 12px;  
-    text-align: center;
-    width: 100%;
-  }
 
-  #imagem {
-    position: absolute;
-    left: 50px;
-    top: 11%;
-  }
-
-  #imagem img {
-    width: clamp(170px, 30vw, 300px);
-  }
-
-  header h1 {
-    font-size: 15px;
-    color: beige;
-    position: absolute;
-    left: 20px;
-    top: 50px;
-  }
-
-  header h1 br {
-    display: none;
-  }
-  
-  header #marca {
-    position: absolute;
-    font-size: 5px;
-    line-height: 1.1;
-    color: rgb(0, 0, 0);
-    
-    top: 203px;
-    left: 5px;
-  }
-
-  #esquerda {
-    position: absolute;
-    width: 5%;
-    left: 7.5%;
-    top: 15.5%;
-  }
-
-  #direita {
-    position: absolute;
-    width: 5%;
-    left: 43%;
-    top: 15.5%;
-  }
-}
 
 main {
   background-color: #ffffff;
 }
-aside, article {
-  margin: 25px
-}
 
-article.inovação-e-tecnologia {
+article.primeiro {
   background-color: #ffffff;
   border-radius: 20px;
   margin: -115px 20px 0px 20px;
@@ -185,17 +118,19 @@ article.inovação-e-tecnologia {
   justify-content: space-between;
 }
 
-article div#caixa1-2 {
-  background-color: black;
+div.primeiro.texto {
+  background-color: #f5e79f00;
+  color: aliceblue;
+  grid-row: 1 / 1;
+  grid-column: 1 / 2;
 }
 
-#foto1 {
-      width: 720px;
-    height: 634px;
-    margin: 0px 189px 0px -47px;
+div.primeiro-img {
+    margin-left: -17%;
+    margin-top: -18%;
 }
 
-article.design-autoral {
+article.segundo {
   background-color: #ffffff;
   border-radius: 20px;
   margin: 119px  20px 0px 20px;
@@ -209,13 +144,18 @@ article.design-autoral {
   justify-content: space-between;
 }
 
-article img#cama {
+article div.segundo-img {
     width: 738px;
     height: 634px;
     margin: -155px -13px 121px 151px;
 }
 
-article.experiencia {
+
+article div.segundo-texto {
+  margin: 21px 55px 29px -77px;
+}
+
+article.terceiro {
   background-color: #ffffff;
   border-radius: 20px;
   margin: 122px 20px 362px 20px;;
@@ -228,8 +168,17 @@ article.experiencia {
   grid-template-columns: repeat(2, 800px);
   justify-content: space-between;
 }
+article div.terceiro-texto {
+  margin: 34px 0px 0px 0px;
+}
 
-article.sobre {
+article div.terceiro-img {
+    margin: -93px -8px 157px -132px;
+    height: 634px;
+    width: 721px;
+}
+
+article.quarto {
   background-color: #f1ecec;
   border-radius: 20px;
   margin: 157px  20px 0px 20px;
@@ -243,13 +192,10 @@ article.sobre {
   justify-content: space-between;
 }
 
-#caixa-sobre {
-  margin: 21px 55px 29px -77px;
-}
 
 div #video {
     height: 544px;
-    margin: -20px 0px 0px 79px;
+    margin: -20px 0px 0px 90px;
 }
 
 div #circulo {
@@ -266,7 +212,11 @@ div #play {
     top: 378%;
 }
 
-aside.soluções {
+article div.quarto-texto {
+  margin: 21px 55px 29px -77px;
+}
+
+aside.quinto {
   background-image: url(imagens/background-aside.png);
   font-family: "PierSans";
   font-size: 22px;
@@ -281,39 +231,25 @@ aside.soluções {
   gap: 100px;
   justify-content: space-between;
 }
-div .dourado {
-  color: #bfa373;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
+
+div.quinto-texto {
+  background-color: #f5e79f00;
+  color: aliceblue;
+  grid-row: 1 / 1;
+  grid-column: 1 / 2;
 }
 
-div.caixa1-1 p {
-  font-size: 20px;
-  line-height: 1.3;
-  text-align: justify;
+div.quinto-img {
+  margin: -345px 0px 0px -241px;
 }
-
-div.caixa1-1 h2 {
-  font-size: 58px;
-  font-family: "EleganteClassica";
-  line-height: 1;
-}
-
-article.sobre h2 {
-  font-size: 58px;
-  font-family: "EleganteClassica";
-  color: #3b5c3b;
-  line-height: 1.034;
-}
-
 
 
 .grey {
   font-size: 20px;
   font-family: "PierSans";
   color: rgb(179, 180, 177);
-  line-height: 1.091;
+  line-height: 1.3;
+  text-align: justify;
 }
 
 .gold {
@@ -324,37 +260,13 @@ article.sobre h2 {
 }
 
 
-div.caixa1-2 {
-  background-color: rgba(137, 43, 226, 0);
-    margin-left: -11%;
-    margin-top: -18%;
-}
-
-.design-autoral {
-  margin-left: -9%;
-  margin-top: -3%;
-}
-
-#foto3 {
-    margin: 133px -8px 157px -49px;
-    height: 634px;
-    width: 721px;
-}
-
-div.caixa1-1 {
-  background-color: #f5e79f00;
-  color: aliceblue;
-  grid-row: 1 / 1;
-  grid-column: 1 / 2;
-}
-
 div#preto {
   color: black;
+  font-size: 58px;
+  font-family: "EleganteClassica";
+  line-height: 1;
 }
 
-div #golf {
-    margin: -207px 0px 0px -166px;
-}
 
 h2 {
   font-size: 58px;
@@ -375,7 +287,6 @@ footer {
   flex-flow: row wrap;
   justify-content: flex-start;
   gap: 10px;
- 
 }
 
 
@@ -385,7 +296,6 @@ footer {
   margin: 70px;
   width: 300px;
   height: 50px;
-  
 }
 
 footer #B {
@@ -409,25 +319,28 @@ footer #H {
   margin: -3px 4px 32px 86px
 }
 
-
 footer #A {
   color: #ffffff;
 }
 
 footer #D {
   color: #b4b4b4;
+  margin: 5%;
   position: relative;
 }
 
 #linkedin {
   background-image: url("Layer 34.png");
   position: absolute;
+  left: 1660px;
+  top: 3563px;
   left: 270px;
   top: 17px;
   width: 16px;
   height: 16px;
   z-index: 43;
 }
+
 #linkedin-b{
   border-style: solid;
   border-width: 1px;
@@ -496,6 +409,7 @@ footer #D {
   height: 44px;
   z-index: 34;
 }
+
 #x {
   background-image: url("Layer 31.png");
   position: absolute;
@@ -523,6 +437,7 @@ footer #D {
   height: 44px;
   z-index: 30;
 }
+
 #instagram {
   background-image: url("Layer 30.png");
   position: absolute;
@@ -534,6 +449,7 @@ footer #D {
   height: 16px;
   z-index: 27;
 }
+
 #instagram-b {
   border-style: solid;
   border-width: 1px;
@@ -558,6 +474,7 @@ footer #D {
   height: 14px;
   z-index: 22;
 }
+
 .Ellipse {
   border-style: solid;
   border-width: 1px;
@@ -571,6 +488,8 @@ footer #D {
   height: 44px;
   z-index: 21;
 }
+
+
 #C {
   display: flex;
   align-items: center;
