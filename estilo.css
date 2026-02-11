@@ -24,7 +24,7 @@ body {
 }
 
 header {
-  width: 100%;
+  width: 98%;
   min-height: clamp(360px, 90vh, 950px);
   margin: 20px;
 
@@ -40,32 +40,23 @@ header {
 }
 
 #rt3 {
-  position: absolute;
-    left: 7%;
-    top: 93%;
-    width: 2%;
-    height: 4%;
-    z-index: 156
+  margin: 191px 0px 0px 19px;
+  width: 2%;
+  height: 4%;
 }
 
 
 #rt2 {
-      position: absolute;
-    left: 4%;
-    top: 93%;
-    width: 2.1%;
-    height: 4%;
-    z-index: 160;
+  margin: 0px 0px 0px 19px;
+  width: 2%;
+  height: 4%;
 }
 
 
 #rt1 {
-    position: absolute;
-    left: 1%;
-    top: 93%;
-    width: 2%;
-    height: 4%;
-    z-index: 156
+   margin: 0px 0px 0px 19px;
+  width: 2%;
+  height: 4%;
 }
 
 
@@ -91,113 +82,48 @@ header h1 {
   line-height: 1.1;
   color: rgb(255, 255, 255);
   position: absolute;
-  top: 260px;
-  left: 100px;
-  z-index: 2;
+  margin: 154px 0px 0px 101px;
 }
 
 header #marca {
   font-size: 20px;
   line-height: 1.1;
   color: rgb(255, 255, 255);
-  position: absolute;
-  top: 650px;
-  left: 100px;
-  z-index: 2;
+  margin: 528px 0px 0px 101px;
+
 }
 
-#imagem {
+#imagem2-header img {
   position: absolute;
-  right: 10%; 
-  bottom: 12%;
   z-index: 3;
-  transition: all 0.4s ease-in-out;
-}
-
-#imagem img {
   width: clamp(220px, 15vw, 520px);
   height: auto;
-  transition: all 0.8s ease-in-out;
+  margin: 0px 0px 0px 0px;
 }
 
 #esquerda {
   position: absolute;
   width: clamp(220px, 15vw, 520px);
-  right: 204px;
-  top: 635px;
+  z-index: 6;
+  margin: 60px 0px 0px -21px;
 }
 
 #direita {
   position: absolute;
   width: clamp(220px, 15vw, 520px);
-  left: 1652px;
-  top: 635px;
+  z-index: 6;
+  margin: 60px 0px 0px 260px;
 }
 
-@media (max-width: 740px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 12px;  
-    text-align: center;
-    width: 100%;
-  }
-
-  #imagem {
-    position: absolute;
-    left: 50px;
-    top: 11%;
-  }
-
-  #imagem img {
-    width: clamp(170px, 30vw, 300px);
-  }
-
-  header h1 {
-    font-size: 15px;
-    color: beige;
-    position: absolute;
-    left: 20px;
-    top: 50px;
-  }
-
-  header h1 br {
-    display: none;
-  }
-  
-  header #marca {
-    position: absolute;
-    font-size: 5px;
-    line-height: 1.1;
-    color: rgb(0, 0, 0);
-    
-    top: 203px;
-    left: 5px;
-  }
-
-  #esquerda {
-    position: absolute;
-    width: 5%;
-    left: 7.5%;
-    top: 15.5%;
-  }
-
-  #direita {
-    position: absolute;
-    width: 5%;
-    left: 43%;
-    top: 15.5%;
-  }
+#img-seta { 
+  margin:-141px 0px 0px 1443px;
 }
 
 main {
-  background-color: #f2f2f2;
-}
-aside, article {
-  margin: 25px
+  background-color: #ffffff;
 }
 
-article.coleções {
+article.primeiro {
   background-color: #e7e7e78f;
   border-radius: 5px;
   margin: 168px 20px 0px 20px;
@@ -212,33 +138,34 @@ article.coleções {
   justify-content: space-between;
 }
 
-article div#caixa1-2 {
-  background-color: black;
-  display: flex;
+div.primeiro-texto {
+  background-color: #f5e79f00;
+  grid-row: 1 / 1;
+  grid-column: 1 / 2;
+}
+
+div.primeiro-texto p {
+  font-size: 20px;
+  line-height: 1.091;
+  text-align: justify;
 }
 
 div #vitrea {
-  position: absolute;
- width: clamp(218px, 25.5vw, 520px);
-    right: 41%;
-    top: 99%;
+   margin: -204px 0px 0px -428px;
 }
 
 div #curvatto {
-  position: absolute;
-  width: clamp(222px, 26vw, 520px);
-    right: 14%;
-    top: 92%;
+  width: clamp(218px, 25.5vw, 520px);
+  margin: -242px -250px 44px 36px;
 }
 
 div #cortada {
   position: absolute;
-  width: clamp(243px, 28vw, 84px);
-    right: 0%;
-    top: 99%;
+  width: clamp(234px, 26vw, 91px);
+  margin: -171px 0px 0px 287px;
 }
 
-article.sobre {
+article.segundo {
   background-color: #ffffff;
   border-radius: 5px;
   margin: 80px  20px 0px 0px;
@@ -255,8 +182,7 @@ article.sobre {
 div #video {
   position: absolute;
     width: clamp(168px, 46vw, 766px);
-    right: 53%;
-    top: 195%;
+    margin: 0px 116px;
 }
 
 div #circulo {
@@ -273,8 +199,14 @@ div #play {
     top: 217%;
 }
 
-aside.soluções {
+div.segundo-texto {
+  background-color: rgba(137, 43, 226, 0);
+  margin-left: -13%;
+}
+
+aside.terceiro {
   background-image: url(imagens/background-aside.png);
+  border-radius: 20px;
   font-family: "PierSans";
   font-size: 22px;
   margin: 370px  20px 0px 20px;
@@ -288,53 +220,46 @@ aside.soluções {
   gap: 100px;
   justify-content: space-between;
 }
-div .dourado {
+
+div.terceiro-texto {
+  background-color: #b89d1a00;
+  color: aliceblue;
+  grid-row: 1 / 1;
+  grid-column: 1 / 2;
+}
+
+div.terceiro-img {
+  width: clamp(97px, 48vw, 710px);
+  margin: -335px 0px 0px -226px;
+}
+
+div .branco {
+  font-size: 22px;
+  font-family: "PierSans";
+  color: rgb(255, 255, 255);
+  line-height: 1.091;
+}
+
+div .branco-h2 {
+  font-size: 58px;
+  font-family: "EleganteClassica";
+  color: rgb(255, 255, 255);
+  line-height: 1.034;
+}
+
+div .gold {
   color: #bfa373;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-div.caixa1-1 p {
-  font-size: 20px;
-  line-height: 1.091;
-  text-align: justify;
-}
-
-div.caixa1-1 h2 {
-  font-size: 58px;
-  font-family: "EleganteClassica";
-  line-height: 1;
-}
-
-article.sobre h2 {
+div .preto{
   font-size: 58px;
   font-family: "EleganteClassica";
   color: rgb(18, 20, 17);
   line-height: 1.034;
-}
 
-
-.btn-circulo1 {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  border: 1px solid #d9c7b0;
-  background: transparent;
-  color: #d9c7b0;
-  font-size: 16px;
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  transition: all 0.3s ease;
-}
-
-#seta-position1 {
-  position: absolute;
-  left: 62.5%;
 }
 .grey {
   font-size: 22px;
@@ -344,33 +269,6 @@ article.sobre h2 {
 }
 
 
-div.caixa1-2 {
-  background-color: rgba(137, 43, 226, 0);
-  margin-left: -13%;
-}
-
-div.caixa1-1 {
-  background-color: #f5e79f00;
-  color: aliceblue;
-  grid-row: 1 / 1;
-  grid-column: 1 / 2;
-}
-
-div#preto {
-  color: black;
-}
-
-div #golf {
-  position: absolute;
-  width: clamp(97px, 48vw, 710px);
-  right: 9%;
-  top: 266%;
-}
-
-h2 {
-  font-family: 'Prestige-Signature'; 
-  font-size: 35px;
-}
 
 footer {
   background-image: url(imagens/logo-footer.png);
@@ -416,11 +314,6 @@ footer #G {
 footer #H {
   margin: -3px 4px 32px 86px
 }
-
-.caixa2 {
-
-}
-
 
 footer #A {
   color: #ffffff;
