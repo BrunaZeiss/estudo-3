@@ -97,30 +97,57 @@ main {
 }
 
 article.primeiro {
-    background-color: #ffffff;
-    border-radius: 10px;
-    margin: -224px 20px 0px 20px;
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 83px;
-    text-align: center;
-    align-items: center;
-    padding: 0px 181px 0px 197px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: -336px 20px 0px 20px;
+  padding: 96px 50px;
+  
+  display: grid;
+  gap: 60px;
 }
 
-.primeiro .item:nth-child(even) {
-  transform: translateY(80px);
+div.primeiro-texto {
+  background-color: #f5e79f00;
 }
+
+.primeiro-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.primeiro-img img {
+  width: 100%;
+  display: block;
+}
+
+.primeiro-img img:nth-child(2) {
+  transform: translateY(-40px);
+}
+
+div #vitrea {
+   margin: -204px 0px 0px -428px;
+}
+
+div #curvatto {
+  width: clamp(218px, 25.5vw, 520px);
+  margin: -242px -250px 44px 36px;
+}
+
+div #cortada {
+  position: absolute;
+  width: clamp(234px, 26vw, 91px);
+  margin: -171px 0px 0px 287px;
+}
+
 
 
 article.segundo {
   background-color: #e4e3e3;
   border-radius: 20px;
-  margin: 157px  20px 0px 20px;
+  margin: 113px  -50px 6px 17px;
   padding-top: 205px;
-  height: 690px;
+  height: 590px;
 
   display: grid;
   grid-template-rows: 250px;
@@ -131,53 +158,44 @@ article.segundo {
 
 
 div #video {
-    height: 544px;
-    margin: -20px 0px 0px 90px;
+  height: 550px;
+    margin: -117px -1px 4px 131px
 }
 
 div #circulo {
     position: absolute;
     width: clamp(76px, 2vw, 423px);
     right: 71%;
-    top: 376%;
+    top: 228%;
 }
 
 div #play {
     position: absolute;
     width: clamp(36px, 2vw, 72px);
     right: 72%;
-    top: 378%;
+    top: 230%;
 }
 
 article div.segundo-texto {
-  margin: 21px 55px 29px -77px;
+  margin: -64px 55px 29px -77px
 }
 
-aside.terceiro {
-  background-image: url(imagens/background-aside.png);
-  font-family: "PierSans";
-  font-size: 22px;
-  margin: 366px  20px 0px 20px;
-  padding-left: 235px;
-  padding-top: 134px;
-  height: 618px;
-
-  display: grid;
-  grid-template-rows: 250px;
-  grid-template-columns: repeat(2, 800px);
-  gap: 100px;
-  justify-content: space-between;
+article.terceiro {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 141px 0px 0px 0px;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 14px;
+    row-gap: 77px;
+    align-items: center;
+    padding: 0px 181px 0px 197px;
 }
 
-div.terceiro-texto {
-  background-color: #f5e79f00;
-  color: aliceblue;
-  grid-row: 1 / 1;
-  grid-column: 1 / 2;
-}
-
-div.terceiro-img {
-  margin: -345px 0px 0px -241px;
+.terceiro .item:nth-child(even) {
+  transform: translateY(80px);
 }
 
 
@@ -195,6 +213,8 @@ div.terceiro-img {
   color: #bfa373;
   line-height: 1.091;
 }
+
+
 
 h2 {
   font-size: 58px;
