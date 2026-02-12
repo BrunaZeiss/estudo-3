@@ -130,9 +130,9 @@ main {
 }
 
 article.primeiro {
-  background-color: #e7e7e78f;
+  background-color: #ffffff;
   border-radius: 10px;
-  margin: 168px 20px 0px 20px;
+  margin: 160px 20px 0px 20px;
   padding-left: 50px;
   padding-top: 96px;
   height: 515px;
@@ -172,25 +172,72 @@ div #cortada {
   margin: -171px 0px 0px 287px;
 }
 
-article div.segundo-texto {
-  background-color: #613e01;
-  border-radius: 10px;
-  margin: 530px  20px 0px 20px;
-height: 500px;
-}
 
 article div.segundo-img {
-  position: absolute;
-  margin: -50px 50px;
+  background-color: #f0ede8;
+  border-radius: 10px;
+  margin: 85px 20px 0px 20px;
+  height: 643px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  text-align: center;
+  align-items: center;
+  padding: 80px 100px;
 }
 
+.beneficio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 59px;
+}
+
+.beneficio img {
+  width: 50px;
+}
+
+.icone {
+  width: 110px;
+  height: 110px;
+  border: 2px solid #c6a46c;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#segundo-texto {
+  margin: -110px 10px 0px -15px;
+    text-align: left;
+    line-height: 1.1;
+}
+
+
+#beneficio-01 {
+    transform: translateY(-80px);
+    font-size: 20px;
+}
+
+#beneficio-02 {
+  transform: translateY(258px);
+  font-size: 20px;
+}
+
+
+#beneficio-03 {
+  transform: translateY(150px);
+  font-size: 20px;
+}
 
 
 
 article.terceiro {
   background-image: url(imagens/in-2.png);
   border-radius: 20px;
-  margin: 330px  20px 0px 20px;
+  margin: 268px  20px 0px 20px;
   padding-top: 205px;
   height: 618px;
 
@@ -207,13 +254,13 @@ article div.terceiro-texto {
 }
 
 article div.terceiro-img {
-  margin: -382px 0px 0px -16px;
+  margin: -441px 0px 0px -16px;
 }
 
 article.quarto {
   background-image: url(imagens/in-1.png);
   border-radius: 20px;
-  margin: 167px 20px 0px 20px;
+  margin: 332px 20px 77px 20px;
   padding-left: 222px;
   padding-top: 96px;
   height: 610px;
@@ -225,7 +272,7 @@ article.quarto {
 }
 
 article div.quarto-img {
-    margin: -278px -13px 0px -132px;
+    margin: -346px -13px 0px -132px;
 }
 
 article div.quarto-texto {
@@ -254,6 +301,20 @@ h2 {
   margin-right: 229px;
 }
 
+.grey {
+  font-size: 20px;
+  font-family: "PierSans";
+  color: rgb(114, 113, 113);
+  line-height: 1.2;
+  margin-right: 229px;
+}
+
+.black {
+  font-size: 58px;
+  font-family: "EleganteClassica";
+  line-height: 1.3;
+  color: rgb(0, 0, 0);
+}
 
 footer {
   background-image: url(imagens/logo-footer.png);
